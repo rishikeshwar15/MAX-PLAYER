@@ -1,0 +1,118 @@
+name: max_player
+description: "MAX PLAYER - High Performance Local Media Player for Android"
+publish_to: 'none'
+version: 3.1.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  material_design_icons_flutter: ^7.0.7296
+
+  # Video/Audio Playback
+  media_kit: ^1.1.10+1
+  media_kit_video: ^2.0.1
+  media_kit_libs_video: ^1.0.4
+  media_kit_libs_android_video: ^1.3.6
+  video_player: ^2.9.1
+  chewie: ^1.8.5
+
+  # Media Scanning & File Access
+  photo_manager: ^3.3.0
+  file_picker: ^8.1.2
+  permission_handler: ^11.3.1
+  device_info_plus: ^11.1.0
+
+  # Storage & Path
+  path_provider: ^2.1.3
+  path: ^1.9.0
+  shared_preferences: ^2.2.3
+
+  # State Management
+  provider: ^6.1.2
+
+  # Network
+  dio: ^5.7.0
+  http: ^1.2.2
+
+  # System Controls
+  screen_brightness: ^2.1.7
+  volume_controller: ^3.0.2
+  wakelock_plus: ^1.2.8
+
+  # Notifications
+  flutter_local_notifications: ^17.1.2
+
+  # Database
+  sqflite: ^2.3.3+3
+  sqflite_common_ffi: ^2.3.2+1
+  sqlite3_flutter_libs: ^0.5.24
+
+  # Share
+  share_plus: ^10.1.4
+
+  # Utils
+  intl: ^0.19.0
+  equatable: ^2.0.7
+  archive: ^3.6.1
+
+  # --- ADVANCED FEATURES ---
+  # Smart Enhance uses Flutter ColorFilter (real-time, no FFmpeg needed)
+  # For permanent video processing, ffmpeg_kit_flutter would be required
+  # but v6.0.3 is discontinued. Real-time enhancement works perfectly.
+
+  # Open downloaded files (APK install)
+  open_filex: ^4.5.0
+
+  # --- LOGO + WEBSITE INTEGRATION ---
+  # Launcher Icons
+  flutter_launcher_icons: ^0.14.1
+  # Splash Screen
+  flutter_native_splash: ^2.4.1
+  # In-app browser
+  webview_flutter: ^4.9.0
+  # Open external URLs
+  url_launcher: ^6.3.1
+  # Get app version
+  package_info_plus: ^8.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo.png
+    - assets/logo_foreground.png
+
+# Launcher Icons Configuration
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#0A0A0A"
+  adaptive_icon_foreground: "assets/logo_foreground.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+# Splash Screen Configuration
+flutter_native_splash:
+  color: "#0A0A0A"
+  image: assets/logo.png
+  android: true
+  ios: false
+  web: false
+  android_gravity: center
+  fullscreen: true
+  android_12:
+    image: assets/logo.png
+    icon_background_color: "#0A0A0A"

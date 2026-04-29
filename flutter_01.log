@@ -1,0 +1,83 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter analyze --no-pub
+
+## exception
+
+_Exception: Exception: analysis server exited with code -1073740791 and output:
+[stdout] {"event":"analysis.errors","params":{"file":"C:\\Users\\ELCOT\\OneDrive\\Desktop\\MAX PLAYER\\lib\\providers\\playback_provider.dart","errors":[]}}
+[stdout] {"event":"analysis.errors","params":{"file":"C:\\Users\\ELCOT\\OneDrive\\Desktop\\MAX PLAYER\\lib\\providers\\playlist_provider.dart","errors":[]}}
+[stdout] {"event":"analysis.errors","params":{"file":"C:\\Users\\ELCOT\\OneDrive\\Desktop\\MAX PLAYER\\lib\\screens\\audio_list_screen.dart","errors":[]}}
+[stdout] {"event":"analysis.errors","params":{"file":"C:\\Users\\ELCOT\\OneDrive\\Desktop\\MAX PLAYER\\lib\\screens\\equalizer_screen.dart","errors":[]}}
+[stdout] {"event":"analysis.errors","params":{"file":"C:\\Users\\ELCOT\\OneDrive\\Desktop\\MAX PLAYER\\lib\\screens\\folder_screen.dart","errors":[]}}
+[stdout] {"event":"analysis.errors","params":{"file":"C:\\Users\\ELCOT\\OneDrive\\Desktop\\MAX PLAYER\\lib\\screens\\history_screen.dart","errors":[]}}
+[stdout] {"event":"analysis.errors","params":{"file":"C:\\Users\\ELCOT\\OneDrive\\Desktop\\MAX PLAYER\\lib\\screens\\home_screen.dart","errors":[]}}
+[stdout] {"event":"analysis.errors","params":{"file":"C:\\Users\\ELCOT\\OneDrive\\Desktop\\MAX PLAYER\\lib\\screens\\player_screen.dart","errors":[]}}
+[stdout] {"event":"analysis.errors","params":{"file":"C:\\Users\\ELCOT\\OneDrive\\Desktop\\MAX PLAYER\\lib\\screens\\playlist_detail_screen.dart","errors":[]}}
+[stdout] {"event":"analysis.errors","params":{"file":"C:\\Users\\ELCOT\\OneDrive\\Desktop\\MAX PLAYER\\lib\\screens\\playlist_screen.dart","errors":[]}}
+[stderr] ../../runtime/vm/zone.cc: 96: error: Out of memory.
+[stderr] version=3.11.5 (stable) (Wed Apr 15 00:36:32 2026 -0700) on "windows_x64"
+[stderr] pid=19588, thread=20576, isolate_group=main(00000229D50EDC20), isolate=(nil)(0000000000000000)
+[stderr] os=windows, arch=x64, comp=no, sim=no
+[stderr] isolate_instructions=229d87d0000, vm_instructions=7ff769df8400
+[stderr] fp=f7b39fde50, sp=f7b39fde08, pc=7ff76a0dcca3
+[stderr]   pc 0x00007ff76a0dcca3 fp 0x000000f7b39fde50 Dart_DetectNullSafety+0x2dc1c3
+[stderr] -- End of DumpStackTrace
+[stderr] ../../runtime/vm/zone.cc: 96: error: Out of memory.
+[stderr] Aborting reentrant request for stack trace.
+
+```
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel stable, 3.41.7, on Microsoft Windows [Version 10.0.26200.8246], locale
+    en-US) [1,322ms]
+    [32m•[39m Flutter version 3.41.7 on channel stable at E:\flutter_windows_3.41.6-stable\flutter
+    [32m•[39m Upstream repository https://github.com/flutter/flutter.git
+    [32m•[39m Framework revision cc0734ac71 (10 days ago), 2026-04-15 21:21:08 -0700
+    [32m•[39m Engine revision 59aa584fdf
+    [32m•[39m Dart version 3.11.5
+    [32m•[39m DevTools version 2.54.2
+    [32m•[39m Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop,
+      enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-native-assets,
+      omit-legacy-version-file, enable-lldb-debugging, enable-uiscene-migration
+
+[32m[✓][39m Windows Version (Windows 11 or higher, 25H2, 2009) [3.6s]
+
+[33m[!][39m Android toolchain - develop for Android devices (Android SDK version 36.1.0) [1,317ms]
+    [32m•[39m Android SDK at C:\Users\ELCOT\AppData\Local\Android\sdk
+    [32m•[39m Emulator version 36.4.9.0 (build_id 14788078) (CL:N/A)
+    [31m✗[39m cmdline-tools component is missing.
+      Try installing or updating Android Studio.
+      Alternatively, download the tools from
+      https://developer.android.com/studio#command-line-tools-only and make sure to set the
+      ANDROID_HOME environment variable.
+      See https://developer.android.com/studio/command-line for more details.
+    [31m✗[39m Android license status unknown.
+      Run `flutter doctor --android-licenses` to accept the SDK licenses.
+      See https://flutter.dev/to/windows-android-setup for more details.
+
+[32m[✓][39m Chrome - develop for the web [640ms]
+    [32m•[39m Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[33m[!][39m Visual Studio - develop Windows apps (Visual Studio Build Tools 2026 18.5.0) [636ms]
+    [32m•[39m Visual Studio at C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools
+    [32m•[39m Visual Studio Build Tools 2026 version 18.5.11709.299
+    [31m✗[39m The current Visual Studio installation is incomplete.
+      Please use Visual Studio Installer to complete the installation or reinstall Visual Studio.
+
+[32m[✓][39m Connected device (3 available) [608ms]
+    [32m•[39m Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.26200.8246]
+    [32m•[39m Chrome (web)      • chrome  • web-javascript • Google Chrome 147.0.7727.116
+    [32m•[39m Edge (web)        • edge    • web-javascript • Microsoft Edge 147.0.3912.86
+
+[32m[✓][39m Network resources [661ms]
+    [32m•[39m All expected network resources are available.
+
+[33m![39m Doctor found issues in 2 categories.
+```
